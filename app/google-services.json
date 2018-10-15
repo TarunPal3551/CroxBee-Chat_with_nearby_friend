@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "853931367634",
+    "firebase_url": "https://croxbee-ccd6d.firebaseio.com",
+    "project_id": "croxbee-ccd6d",
+    "storage_bucket": "croxbee-ccd6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853931367634:android:9420f1a50b4164ad",
+        "android_client_info": {
+          "package_name": "com.croxbee.croxbee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853931367634-b3roi4o7qebrm4q5jenvdfj20osd0e9p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.croxbee.croxbee",
+            "certificate_hash": "3d7ca359740030a72f24a4ff1eda1229e8e09e09"
+          }
+        },
+        {
+          "client_id": "853931367634-3oet97l8jht85a7nl65ettftbk9sdv80.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "853931367634-3oet97l8jht85a7nl65ettftbk9sdv80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk6lPhIh82IQpqjbQMe0R8oWKWBlt7i2k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853931367634-3oet97l8jht85a7nl65ettftbk9sdv80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

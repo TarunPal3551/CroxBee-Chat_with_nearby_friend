@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CroxBee</string>
+    <string name="facebook_app_id">231614107433390</string>
+    <string name="fb_login_protocol_scheme">fb231614107433390</string>
+    <string name="text_style">
+  <![CDATA[
+    Multiple style inside android textview: bold text: <b>bold</b>, italic text: <i>italic</i>, small font: <small>small text</small>,
+    font color: <font color="red">Text Color</font>, font color with bold text: <font color="red"><b>Bold with font color</b></font>
+  ]]>
+    </string>
+    <string name="termandcondition">
+        By connecting , you agree to our <b> Term of service </b> and <b> Privacy policy </b>
+    </string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

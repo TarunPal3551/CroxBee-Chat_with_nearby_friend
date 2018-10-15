@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".User_Prefence_Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rel1"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel1">
+
+                <RelativeLayout
+                    android:id="@+id/seprator3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/darker_gray"
+                    tools:ignore="NotSibling">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seprator3"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="15dp"
+                    android:text="I am looking for..."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/select_women_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/select_men_button"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/select_men_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="10dp" />
+
+                <Switch
+                    android:id="@+id/select_both_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/select_women_button"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seprator1"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Select age between"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/minimumagetextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView6"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/textView6"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:text="18"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView6"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/minimumagetextview"
+                    android:layout_toRightOf="@+id/minimumagetextview"
+                    android:text="to"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/maximumagetextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView6"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/textView8"
+                    android:layout_toRightOf="@+id/textView8"
+                    android:text="70+"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/seprator1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/select_both_button"
+                    android:layout_marginTop="30dp"
+                    android:background="@android:color/darker_gray"
+                    tools:ignore="NotSibling">
+
+                </RelativeLayout>
+
+                <com.appyvet.materialrangebar.RangeBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/age_range_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView6"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:paddingTop="10dp"
+                    android:soundEffectsEnabled="true"
+                    app:mrb_connectingLineColor="@color/colorPrimaryDark"
+                    app:mrb_pinColor="@color/colorPrimary"
+                    app:mrb_pinMaxFont="10sp"
+                    app:mrb_pinTextColor="#ffffff"
+                    app:mrb_rangeBarPaddingBottom="30dp"
+                    app:mrb_selectorBoundaryColor="@color/colorPrimaryDark"
+                    app:mrb_selectorBoundarySize="2dp"
+                    app:mrb_selectorColor="@color/colorPrimaryDark"
+                    app:mrb_selectorSize="5dp"
+                    app:mrb_temporaryPins="true"
+                    app:mrb_tickColor="@color/colorPrimaryDark"
+                    app:mrb_tickEnd="70"
+                    app:mrb_tickInterval="1"
+                    app:mrb_tickStart="18" />
+
+                <RelativeLayout
+                    android:id="@+id/seprator2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/age_range_selector"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/darker_gray"
+                    tools:ignore="NotSibling">
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seprator2"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Select distance between"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <com.appyvet.materialrangebar.RangeBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/distance_range_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView5"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:drawable/screen_background_light_transparent"
+                    android:paddingTop="10dp"
+                    android:soundEffectsEnabled="true"
+                    app:mrb_connectingLineColor="@color/colorPrimaryDark"
+                    app:mrb_pinColor="@color/colorPrimary"
+                    app:mrb_pinMaxFont="10sp"
+                    app:mrb_pinTextColor="#ffffff"
+                    app:mrb_rangeBarPaddingBottom="30dp"
+                    app:mrb_selectorBoundaryColor="@color/colorPrimaryDark"
+                    app:mrb_selectorBoundarySize="2dp"
+                    app:mrb_selectorColor="@color/colorPrimaryDark"
+                    app:mrb_selectorSize="5dp"
+                    app:mrb_temporaryPins="true"
+                    app:mrb_tickColor="@color/colorPrimaryDark"
+                    app:mrb_tickEnd="100"
+                    app:mrb_tickInterval="1"
+                    app:mrb_tickStart="10" />
+
+                <RelativeLayout
+                    android:id="@+id/seprator4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/distance_range_selector"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/darker_gray"
+                    tools:ignore="NotSibling">
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textviewinterset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/seprator4"
+                    android:layout_marginLeft="17dp"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Interest"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_dating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seprator4"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:text="Dating"
+                    android:checked="true"
+                    android:buttonTint="@color/colorPrimaryDark"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checkBox_dating"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imageView"
+                    android:layout_toRightOf="@id/imageView"
+                    android:text="Chat"
+                    android:buttonTint="@color/colorPrimaryDark"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_friendship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checkBox_chat"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imageView"
+                    android:layout_toRightOf="@id/imageView"
+                    android:text="Friendship"
+                    android:buttonTint="@color/colorPrimaryDark"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="23dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/textviewinterset"
+                    android:layout_marginStart="85dp"
+                    app:srcCompat="@drawable/ic_action_help"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="85dp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_alignTop="@+id/select_men_button"
+                    android:text="Men"
+                    android:textSize="18sp"
+                    android:layout_alignLeft="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_alignTop="@+id/select_women_button"
+                    android:text="Women"
+                    android:textSize="18sp"
+                    android:layout_alignLeft="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_alignTop="@+id/select_both_button"
+                    android:text="Both"
+                    android:textSize="18sp"
+                    android:layout_alignLeft="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/minimundistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seprator2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/textView5"
+                    android:layout_toRightOf="@id/textView5"
+                    android:text="10"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/minimundistance"
+                    android:layout_below="@+id/seprator2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="to"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/checkBox_dating" />
+
+                <TextView
+                    android:id="@+id/maximundistances"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seprator2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/textView15"
+                    android:layout_toRightOf="@+id/textView15"
+                    android:text="100+"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seprator2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/maximundistances"
+                    android:text="(Km)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

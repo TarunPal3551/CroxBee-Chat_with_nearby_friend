@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_Profile_Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/viewpagerbackground"
+            android:layout_alignParentLeft="true">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <LinearLayout
+            android:id="@+id/dotslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="305dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewpager">
+
+            <RelativeLayout
+                android:id="@+id/seprator1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edit_profile_gender_text_view"
+                android:background="@android:color/darker_gray"
+                tools:ignore="NotSibling">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/edit_profile_username_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="15dp"
+                android:text="User Name ,"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/edit_profile_gender_text_view"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_profile_username_"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/edit_profile_username_"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="47dp"
+                android:text="Gender"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edit_profile_username_"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/edit_profile_username_"
+                android:layout_marginTop="110dp"
+                android:text="About Me"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_about_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Tell us about yourself"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/seprator2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText_about_me"
+                android:background="@android:color/darker_gray"
+                tools:ignore="NotSibling">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/seprator2"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="20dp"
+                android:text="Work and Studies"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/edit_profile_age_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/edit_profile_username_"
+                android:layout_marginLeft="9dp"
+                android:layout_toEndOf="@+id/edit_profile_username_"
+                android:layout_toRightOf="@+id/edit_profile_username_"
+                android:text="Age"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/job_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView14"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Job"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/darker_gray"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/employer_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/job_edit_text"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Employer"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/scholl_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/employer_edittext"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="School/College"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>
